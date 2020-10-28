@@ -1,0 +1,43 @@
+
+#tables will be created in fastapi database in mysql
++----------------------+
+| Tables_in_fastapi    |
++----------------------+
+| chemical_composition |
+| chemical_element     |
+| commodity            |
++----------------------+
+3 rows in set (0.16 sec)
+
+mysql> select * from chemical_composition;
++----+------+------------+------+
+| id | eid  | percentage | cid  |
++----+------+------------+------+
+|  1 |    4 |         25 |   10 |
+|  2 |    1 |         15 |   10 |
+|  3 |    7 |         10 |   10 |
+|  4 |    6 |         15 |   10 |
++----+------+------------+------+
+4 rows in set (0.00 sec)
+
+mysql> select * from chemical_element;
++----+---------+
+| id | name    |
++----+---------+
+|  4 | AI      |
+|  1 | C       |
+|  7 | Cu      |
+|  6 | Fe      |
+|  2 | N       |
+|  3 | O       |
+|  5 | Unknown |
++----+---------+
+7 rows in set (0.07 sec)
+
+mysql> select * from commodity;
++----+--------------------+-----------+--------+
+| id | name               | inventory | price  |
++----+--------------------+-----------+--------+
+| 10 | Plate & Structural |     200.1 | 334.44 |
++----+--------------------+-----------+--------+
+
